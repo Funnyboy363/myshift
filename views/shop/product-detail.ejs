@@ -1,0 +1,22 @@
+<%- include('../includes/head.ejs') %>
+    </head>
+
+    <body>
+        <%- include('../includes/navigation.ejs') %>
+        <main class="centered">
+            <h1><%= product.title %></h1>
+            <hr>
+           
+            <p><span style="font-weight: 800;">Monday:</span> <%= product.monday %></p>
+            <p><span style="font-weight: 800;">Tuesday:</span> <%= product.tuesday %></p>
+            <p><span style="font-weight: 800;">Wednesday:</span> <%= product.wednesday %></p>
+            <p><span style="font-weight: 800;">Thursday:</span> <%= product.thursday %></p>
+            <p><span style="font-weight: 800;">Friday:</span> <%= product.friday %></p>
+            <p><span style="font-weight: 800;">Saturday:</span> <%= product.saturday %></p>
+           <p><span style="font-weight: 800;">Description:</span><%= product.description %></p>
+            <% if (isAuthenticated) { %>
+                
+            <% } %>
+            <button class="btn" type="submit">Request Shift Cover</button>
+        </main>
+        <%- include('../includes/end.ejs') %>
