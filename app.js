@@ -7,6 +7,7 @@ const session = require('express-session');
 const MongoDBStore = require('connect-mongodb-session')(session);
 const csrf = require('csurf');
 const flash = require('connect-flash');
+require('dotenv').config(); //this is what helps to hide the login for MongoDB connection
 
 const errorController = require('./controllers/error');
 const User = require('./models/user');
