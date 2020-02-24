@@ -24,7 +24,6 @@ const csrfProtection = csrf();
 
 app.set('view engine', 'ejs');
 app.set('views', 'views');
-app.set('port', (process.env.PORT || 3000));
 
 const adminRoutes = require('./routes/admin');
 const shopRoutes = require('./routes/shop');
@@ -70,9 +69,9 @@ app.use(errorController.get404);
 mongoose
   .connect(MONGODB_URI)
   .then(result => {
-    app.listen(app.get('port'))
-      console.log('app listening on port 3000');
-   
+    app.listen(process.env.PORT || 3000, function(){
+      console.log('Your node js server is running on port 8000');
+  });
   })
   .catch(err => {
     console.log(err);
