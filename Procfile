@@ -1,3 +1,1 @@
-<process type>: <command>
-
-web: nodemon app.js
+web: node app.js
