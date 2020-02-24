@@ -67,11 +67,16 @@ app.use(authRoutes);
 
 app.use(errorController.get404);
 
+let port = process.env.PORT
+if (port == null || port == '') {
+const port = 8000;
+}
+
 mongoose
   .connect(MONGODB_URI)
   .then(result => {
-    app.listen(process.env.PORT || 3000, function(){
-      console.log('Your node js server is running on port 8000');
+    app.listen(port, () => {
+      console.log(`Your node js server is running on port ${port}`);
   });
   })
   .catch(err => {
