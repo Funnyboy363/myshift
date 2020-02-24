@@ -1,4 +1,3 @@
-var PORT = process.env.PORT || 3000;
 const path = require('path');
 
 const express = require('express');
@@ -70,9 +69,9 @@ app.use(errorController.get404);
 mongoose
   .connect(MONGODB_URI)
   .then(result => {
-    app.listen(PORT, function() {
+    app.listen(process.env.PORT || 3000)
       console.log('app listening on port 3000');
-    });
+   
   })
   .catch(err => {
     console.log(err);
