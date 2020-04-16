@@ -1,0 +1,39 @@
+<%- include('../includes/head.ejs') %>
+    <link rel="stylesheet" href="/css/forms.css">
+    <link rel="stylesheet" href="/css/product.css">
+</head>
+
+<body>
+   <%- include('../includes/navigation.ejs') %>
+
+    <main>
+        <form class="product-form" action="/admin/<% if (editing) { %>edit-shiftcover<% } else { %>request-shiftcover<% } %>" method="POST">
+            <div class="form-control">
+                <label for="title">Employee Name</label>
+                <input type="text" name="title" id="title" value="<% if (editing) { %><%= product.title %><% } %>">
+            </div>
+            <div class="form-control">
+                <label for="description">Monday</label>
+                <textarea name="monday" id="monday" rows="1"><% if (editing) { %><%= product.monday %><% } %></textarea>
+                <label for="description">Tuesday</label>
+                <textarea name="tuesday" id="tuesday" rows="1"><% if (editing) { %><%= product.tuesday %><% } %></textarea>
+                <label for="description">Wednesday</label>
+                <textarea name="wednesday" id="wednesday" rows="1"><% if (editing) { %><%= product.wednesday %><% } %></textarea>
+                <label for="description">Thursday</label>
+                <textarea name="thursday" id="thursday" rows="1"><% if (editing) { %><%= product.thursday %><% } %></textarea>
+                <label for="description">Friday</label>
+                <textarea name="friday" id="friday" rows="1"><% if (editing) { %><%= product.friday %><% } %></textarea>
+                <label for="description">Saturday</label>
+                <textarea name="saturday" id="saturday" rows="1"><% if (editing) { %><%= product.saturday %><% } %></textarea>
+                <label for="description">Details</label>
+                <textarea name="description" id="description" rows="1"><% if (editing) { %><%= product.description %><% } %></textarea>
+            </div>
+            <% if (editing) { %>
+                <input type="hidden" value="<%= product._id %>" name="productId">
+            <% } %>
+
+            <input type="hidden" name="_csrf" value="<%= csrfToken %>">
+            <button class="btn" type="submit"><% if (editing) { %>Update Shift<% } else { %>Submit Shift<% } %></button>
+        </form>
+    </main>
+<%- include('../includes/end.ejs') %>
