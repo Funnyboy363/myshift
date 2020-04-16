@@ -8,13 +8,22 @@ const MongoDBStore = require('connect-mongodb-session')(session);
 const csrf = require('csurf');
 const flash = require('connect-flash');
 require('dotenv').config(); //this is what helps to hide the login for MongoDB connection
+const cors = require('cors');
+const { ApolloServer } = require('apollo-server-express');
 
 const errorController = require('./controllers/error');
 const User = require('./models/user');
 
+// const server = new ApolloServer({
+//   typeDefs: schema.typeDefs,
+//   resolvers: schema.resolvers
+// });
+
 const MONGODB_URI =
   'mongodb+srv://funnyboy363:qwertyu@testcluster-tcnpj.mongodb.net/test?retryWrites=true&w=majority';
  
+
+  
 
 const app = express();
 const store = new MongoDBStore({
@@ -82,6 +91,3 @@ mongoose
   .catch(err => {
     console.log(err);
   });
-
-
-
