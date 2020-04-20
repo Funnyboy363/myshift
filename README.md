@@ -12,10 +12,11 @@ cd into /myshift
 ### Server Install Process
 
 `npm install`
+
+The script says to run the app using nodemon with app.js. In the gitbash, type the following:
 `npm start`
 
-(or) nodemon app.js to run the application
-should be available on port 3000
+This will start the app and run it up. The port should be available on 3000.
 
 ### How to use
 When in the app, only the page "Employees should currently show (As of Feb 23 2020) until logging in. This displays shifts of employees for a potential company that would use the app.
