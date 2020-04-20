@@ -26,16 +26,16 @@ When in the app, only the page "Employees should currently show (As of Feb 23 20
 
  ### Filling out a schedule
 
- When filling out a schedule for an employee, here is the information that you can fill out that sends to the database. 
+ **When filling out a schedule for an employee, here is the information that you can fill out that sends to the database.** 
 
-⋅⋅* Name of employee
-⋅⋅* Monday shift
-⋅⋅* Tuesday shift
-⋅⋅* Wednesday shift  
-⋅⋅* thursday shift
-⋅⋅* friday shift
-⋅⋅* saturday shift
-⋅⋅* Description
+* Name of employee
+* Monday shift
+* Tuesday shift
+* Wednesday shift  
+* thursday shift
+* friday shift
+* saturday shift
+* Description
 
 That info shows up to Create, Read, Update and Delete....
 
