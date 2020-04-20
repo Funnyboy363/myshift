@@ -1,18 +1,18 @@
 # myShift Attempted RESTful CRUD Node Server and GraphQL Project
 This is an app for managers and supervisors to create and post weekly shifts.
 
-https://myshift-gs.herokuapp.com/
+[MyShift Official Site](https://myshift-gs.herokuapp.com/ "myshift offical site")
 
 ### RESTful CRUD Node Server
 
-````git clone https://github.com/Funnyboy363/myshift````
+`git clone https://github.com/Funnyboy363/myshift`
 
 cd into /myshift
 
 ### Server Install Process
 
-```npm install```
-```npm start``` 
+`npm install`
+`npm start`
 
 (or) nodemon app.js to run the application
 should be available on port 3000
