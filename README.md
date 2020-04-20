@@ -3,13 +3,15 @@ This is an app for managers and supervisors to create and post weekly shifts.
 
 [MyShift Official Site](https://myshift-gs.herokuapp.com/ "myshift offical site")
 
-### RESTful CRUD Node Server
+## RESTful CRUD Node Server
+#### Step 1: Download and install dependencies
 
 `git clone https://github.com/Funnyboy363/myshift`
 
 cd into /myshift
 
 ### Server Install Process
+Begin by installing any packages needed to run the project. npm install will install anything needed.
 
 `npm install`
 
@@ -17,7 +19,7 @@ The script says to run the app using nodemon with app.js. In the gitbash, type t
 
 `npm start`
 
-This will start the app and run it up. The port should be available on 3000.
+This will start the app and run it up. Open a window and type in localhost://3000
 
 ### How to use
 When in the app, only the page "Employees should currently show (As of Feb 23 2020) until logging in. This displays shifts of employees for a potential company that would use the app.
@@ -38,6 +40,16 @@ When in the app, only the page "Employees should currently show (As of Feb 23 20
 * Description
 
 That info shows up to Create, Read, Update and Delete....
+
+### Schema for the shifts
+
+If there is a need to change the schema, it is located in 
+
+`models > product.js`
+
+you will also want to make sure to adjust the information to do CRUD operations located in:
+
+`controllers > admin.js`
 
 ### More in-depth info
 When pulling up the app, it should display the list of employees and their shifts (Read part of crud). When loggling in, the user should be able to create shifts day by day when going to "Create shift". This information is sent over to the MongoDB. 
