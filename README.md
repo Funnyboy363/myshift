@@ -4,9 +4,17 @@ This is an app for managers and supervisors to create and post weekly shifts.
 https://myshift-gs.herokuapp.com/
 
 ### RESTful CRUD Node Server
-Server Install Process
-``npm install``
-``npm start`` (or) nodemon app.js to run the application
+
+````git clone https://github.com/Funnyboy363/myshift````
+
+cd into /myshift
+
+### Server Install Process
+
+```npm install```
+```npm start``` 
+
+(or) nodemon app.js to run the application
 should be available on port 3000
 
 ### How to use
