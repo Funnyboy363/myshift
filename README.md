@@ -15,16 +15,17 @@ Begin by installing any packages needed to run the project. npm install will ins
 
 `npm install`
 
+#### Step 2: Starting the server for the app
 The script says to run the app using nodemon with app.js. In the gitbash, type the following:
 
 `npm start`
 
 This will start the app and run it up. Open a window and type in localhost://3000
 
-### How to use
+#### Step 3: Using the app
+
 When in the app, only the page "Employees should currently show (As of Feb 23 2020) until logging in. This displays shifts of employees for a potential company that would use the app.
  When logged in, the HR Manager (or supervisor) clicks on "Create Shift" to make one for an employee for that week. In the "Review Shift" page, the manager can edit the shift or delete it.
-
 
  ### Filling out a schedule
 
