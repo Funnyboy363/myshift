@@ -51,6 +51,17 @@ you will also want to make sure to adjust the information to do CRUD operations 
 
 `controllers > admin.js`
 
+
+### Input your own Database
+
+Please go to mongodb atlas (if you have not created an account, please do so) and create a database of your own to use for this app. 
+
+You will be able to input the database information in `app.js`
+the info to copy will be something that looks liks this:
+
+```const MONGODB_URI =
+  'mongodb+srv://<username>:<password>@testcluster-tcnpj.mongodb.net/test?retryWrites=true&w=majority';```
+
 ### More in-depth info
 When pulling up the app, it should display the list of employees and their shifts (Read part of crud). When loggling in, the user should be able to create shifts day by day when going to "Create shift". This information is sent over to the MongoDB. 
 
