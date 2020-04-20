@@ -63,8 +63,10 @@ the info to copy will be something that looks liks this:
 ```const MONGODB_URI = 'mongodb+srv://<username>:<password>@testcluster-tcnpj.mongodb.net/test?retryWrites=true&w=majority';```
 
 ### More in-depth info
-When pulling up the app, it should display the list of employees and their shifts (Read part of crud). When loggling in, the user should be able to create shifts day by day when going to "Create shift". This information is sent over to the MongoDB. 
+When pulling up the app, it should display the list of employees and their shifts (Read part of crud). When logging in, the user should be able to create shifts day by day when going to "Create shift". This information is sent over to the MongoDB. 
 
-When going to review shifts, the user has the option to edit the existing shift, or delete it from the Database. All this will also display in the "Employees" page, which should just be the "Read" portion of the CRUD operations.
+When going to review shifts, the user has the option to edit the existing shift, or delete it from the Database (Review Shifts). All this will also display in the "Employees" page, which should just be the "Read" portion of the CRUD operations. 
+
+**You do not need to be logged in to view submitted shifts**
 
 There is an option to "request shift cover". The intent is to have the information for the shift cover be used by GraphQL. This has not been successfull as of yet. I have not been able to figure out the connections and make it fully work. 
