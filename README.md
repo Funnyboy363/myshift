@@ -70,3 +70,28 @@ When going to review shifts, the user has the option to edit the existing shift,
 **You do not need to be logged in to view submitted shifts**
 
 There is an option to "request shift cover". The intent is to have the information for the shift cover be used by GraphQL. This has not been successfull as of yet. I have not been able to figure out the connections and make it fully work. 
+
+
+# Using GraphQL with Prisma and Docker
+
+Currently, when using, make sure to not have the app running.
+Prisma has already been initialized on a demo server in the prisma cloud. 
+
+First, make sure you have docker installed on your computer, then type `docker-compose up -d` to get it started.
+
+Check `datamodel.prisma` to see the schema set up for this. You can change it as long as you match the schema to post.
+
+To deploy the prisma service type `prisma deploy` in the console.
+To open the playground, type `prisma playground` in the console.
+
+An ideal mutation to post in the playground would be the following:
+` mutation {
+    createUser(data: {
+        name: "Owen Mccregor"
+    }) {
+        id
+    }
+} `
+
+Click Execute Query (play button) in the center and it should output response information.
+

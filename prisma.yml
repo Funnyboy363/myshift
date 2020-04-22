@@ -1,0 +1,6 @@
+endpoint: https://us1.prisma.sh/grant-shoop-74c603/myshift/dev
+datamodel: datamodel.prisma
+
+generate:
+  - generator: typescript-client
+    output: ./generated/prisma-client/
