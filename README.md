@@ -85,6 +85,7 @@ To deploy the prisma service type `prisma deploy` in the console.
 To open the playground, type `prisma playground` in the console.
 
 An ideal mutation to post in the playground would be the following:
+
 ` mutation {
     createUser(data: {
         name: "Owen Mccregor"
