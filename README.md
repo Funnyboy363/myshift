@@ -105,11 +105,11 @@ query allUsers {
 
 
 # Opening GraphQL Apollo Server
+While in the project folder in the text editor, go to your terminal.
 In your terminal type in `npm install apollo-server` to make sure that apollo is installed
 
 The Main apollo server information is in `index.js`.
-While in the project folder in the text editor, go to your terminal.
-Type in `node index.js` and hit enter.
+In your terminal Type in `node index.js` and hit enter.
 Response should say 
 `Apollo Server started at http://localhost:4000/`
 
