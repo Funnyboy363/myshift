@@ -96,3 +96,51 @@ An ideal mutation to post in the playground would be the following:
 
 Click Execute Query (play button) in the center and it should output response information.
 
+
+
+query allUsers {
+    id
+    name
+}
+
+
+# Opening GraphQL Apollo Server
+
+While in the project folder in the text editor, go to your terminal.
+Type in `node index.js`
+Response should say 
+`Apollo Server started at http://localhost:4000/`
+Ctrl + Click on the local host to open the playground.
+When you are in the playground, you have some options to view what is already there. 
+
+#### To view video games
+```
+{
+videogames {
+    id
+    name
+}
+} 
+```
+
+#### To view Products
+```
+{
+    products {
+        id
+        name
+        price
+    }
+}
+```
+
+### To view Music
+```
+{
+    musics {
+        id
+        title
+        artist
+    }
+}
+```

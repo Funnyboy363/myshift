@@ -51,8 +51,6 @@ type PageInfo {
 type Post {
   id: ID!
   title: String!
-  content: String!
-  author: User!
 }
 
 type PostConnection {
@@ -64,8 +62,6 @@ type PostConnection {
 input PostCreateInput {
   id: ID
   title: String!
-  content: String!
-  author: UserCreateOneInput!
 }
 
 type PostEdge {
@@ -78,14 +74,11 @@ enum PostOrderByInput {
   id_DESC
   title_ASC
   title_DESC
-  content_ASC
-  content_DESC
 }
 
 type PostPreviousValues {
   id: ID!
   title: String!
-  content: String!
 }
 
 type PostSubscriptionPayload {
@@ -108,13 +101,10 @@ input PostSubscriptionWhereInput {
 
 input PostUpdateInput {
   title: String
-  content: String
-  author: UserUpdateOneRequiredInput
 }
 
 input PostUpdateManyMutationInput {
   title: String
-  content: String
 }
 
 input PostWhereInput {
@@ -146,21 +136,6 @@ input PostWhereInput {
   title_not_starts_with: String
   title_ends_with: String
   title_not_ends_with: String
-  content: String
-  content_not: String
-  content_in: [String!]
-  content_not_in: [String!]
-  content_lt: String
-  content_lte: String
-  content_gt: String
-  content_gte: String
-  content_contains: String
-  content_not_contains: String
-  content_starts_with: String
-  content_not_starts_with: String
-  content_ends_with: String
-  content_not_ends_with: String
-  author: UserWhereInput
   AND: [PostWhereInput!]
   OR: [PostWhereInput!]
   NOT: [PostWhereInput!]
@@ -201,11 +176,6 @@ input UserCreateInput {
   name: String!
 }
 
-input UserCreateOneInput {
-  create: UserCreateInput
-  connect: UserWhereUniqueInput
-}
-
 type UserEdge {
   node: User!
   cursor: String!
@@ -241,28 +211,12 @@ input UserSubscriptionWhereInput {
   NOT: [UserSubscriptionWhereInput!]
 }
 
-input UserUpdateDataInput {
-  name: String
-}
-
 input UserUpdateInput {
   name: String
 }
 
 input UserUpdateManyMutationInput {
   name: String
-}
-
-input UserUpdateOneRequiredInput {
-  create: UserCreateInput
-  update: UserUpdateDataInput
-  upsert: UserUpsertNestedInput
-  connect: UserWhereUniqueInput
-}
-
-input UserUpsertNestedInput {
-  update: UserUpdateDataInput!
-  create: UserCreateInput!
 }
 
 input UserWhereInput {
