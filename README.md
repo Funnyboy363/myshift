@@ -105,9 +105,9 @@ query allUsers {
 
 
 # Opening GraphQL Apollo Server
-The Main apollo server information is in `index.js`
+The Main apollo server information is in `index.js`.
 While in the project folder in the text editor, go to your terminal.
-Type in `node index.js`
+Type in `node index.js` and hit enter.
 Response should say 
 `Apollo Server started at http://localhost:4000/`
 
