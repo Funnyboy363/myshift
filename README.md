@@ -105,18 +105,19 @@ query allUsers {
 
 
 # Opening GraphQL Apollo Server
-
+The Main apollo server information is in `index.js`
 While in the project folder in the text editor, go to your terminal.
 Type in `node index.js`
 Response should say 
 `Apollo Server started at http://localhost:4000/`
+
 Ctrl + Click on the local host to open the playground.
 When you are in the playground, you have some options to view what is already there. 
 
 #### To view video games
 ```
 {
-videogames {
+ videogames {
     id
     name
 }
@@ -126,21 +127,24 @@ videogames {
 #### To view Products
 ```
 {
-    products {
-        id
-        name
-        price
+  products {
+    id
+    name
+    price
     }
 }
 ```
 
-### To view Music
+#### To view Music
 ```
 {
-    musics {
-        id
-        title
-        artist
+  musics {
+    id
+    title
+    artist
     }
 }
 ```
+
+If you would like to adjust any info, the typeDefs and Resolvers are in 
+`modules`. You will find `category/index.js`, `music/index.js`, and `product/index.js`
